@@ -1,0 +1,108 @@
+$hero-title-font: 62px;
+$hero-subtitle-font: 48px;
+
+$hero-title-mobile: $hero-title-font / 2;
+$hero-subtitle-mobile: $hero-subtitle-font / 2.1;
+$hero-description-mobile: 14px;
+
+$hero-primary-color: #fff;
+$hero-secondary-color: rgba($color: #fff, $alpha: .9);
+
+
+.section-hero { 
+  color: $hero-primary-color;
+  .section-body {
+    text-align: center;
+    padding: 55px 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+  .section-title {
+    font-size: $hero-title-mobile;
+    line-height: $hero-title-mobile + 10px;
+    font-weight: $font-weight-light;
+    color: $hero-primary-color;
+    margin-bottom: 10px;
+    span {
+      font-weight: $font-weight-bold;
+    }
+  }
+  .section-subtitle { 
+    color: $hero-secondary-color;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    span{
+      color: #0feb9e;
+    }
+    
+
+  }
+  .section-description {
+    position: relative;
+    display: inline-block;
+    font-size: $hero-description-mobile;
+    line-height: $hero-description-mobile + 10px;
+    color: $hero-secondary-color;
+    font-weight: $font-weight-light;
+    &:before {
+      @include side-line;
+      left: -43px;
+    }
+    &:after {
+      @include side-line;
+      right: -43px;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-xsmall) {
+  .section-hero {
+    .section-subtitle { 
+      font-size: $hero-subtitle-font / 1.8;
+      // line-height: ;
+    }
+  }
+}
+@media screen and (min-width: $breakpoint-small) {
+  .section-hero {   
+    .section-body { 
+      padding: 110px 0;
+    }
+    .section-title {
+      font-size: $hero-title-font / 1.5;
+      line-height: 45px;
+      margin-bottom: 13px;
+    }
+    .section-subtitle { 
+      font-size: $hero-subtitle-font / 1.3;
+      line-height: 42px;
+      margin-bottom: 18px;
+
+    }
+    .section-description {
+      font-size: $global-font-size;
+      line-height: $global-line-height;
+
+    }
+  }
+  
+}
+@media screen and (min-width: $breakpoint-medium) {
+  .section-hero {
+    .section-title {
+      font-size: $hero-title-font;
+      line-height: 68px;
+
+    }
+    .section-subtitle { 
+      font-size: $hero-subtitle-font;
+      line-height: 54px;
+      margin-bottom: 20px;
+    }
+  }
+}

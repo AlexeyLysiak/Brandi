@@ -1,0 +1,16 @@
+.header { 
+  background-color: rgba($color: #101636, $alpha: .2);
+  // padding: 24px 0 19px;
+  &-content{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0 19px;
+  }
+  .logo-wrapper { 
+    display: flex;
+    align-items: center;
+  }
+  
+
+}

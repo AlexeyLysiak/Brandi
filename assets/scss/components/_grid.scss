@@ -1,0 +1,41 @@
+
+.columns-zero {
+  margin: 0;
+}
+.columns-zero > .column {
+  padding: 0;
+}
+
+.columns-small {
+  margin: -11px -22px;
+}
+.columns-small > .column {
+  padding: 11px 22px;
+}
+.columns-medium {
+  margin: -30px;
+}
+.columns-medium > .column {
+  padding: 30px;
+}
+
+.columns-large {
+  margin: -50px;
+}
+.columns-large > .column {
+  padding: 50px;
+}
+
+@media (min-width: 480px) {
+  .columns { 
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 640px) { 
+  
+}
+@media screen and (min-width: 960px) { 
+
+}

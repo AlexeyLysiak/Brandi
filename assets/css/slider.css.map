@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/components/slider.scss"
+    ],
+    "names": [],
+    "file": "slider.css"
+}

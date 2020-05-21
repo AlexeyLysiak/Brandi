@@ -1,0 +1,8 @@
+@mixin side-line () {
+  position: absolute;
+  content: '';
+  top: 50%;
+  width: 28px;
+  height: 1px;
+  background-color: $hero-color-inverse;
+}

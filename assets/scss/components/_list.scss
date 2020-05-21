@@ -1,0 +1,38 @@
+ol, ul { 
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.social-list { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 25px ;
+  .social-item { 
+    a {
+      font-size: 20px;
+      color: rgba($color: #fff, $alpha: .3);
+      &:hover {
+        color: #fff;
+      }
+    }
+    &:not(:last-child){
+      margin-right: 15px;  
+    }
+
+  }
+}
+
+@media screen and (min-width: $breakpoint-xsmall) {
+
+}
+
+@media screen and (min-width: $breakpoint-small) {
+  .social-list {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  
+}
