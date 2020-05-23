@@ -1,0 +1,27 @@
+.card {
+  display: flex;
+  max-width: 370px;
+  margin: 0 auto;
+  .icon { 
+    width: 40px;
+    height: 40px;
+    border: 1px solid #0eb493;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #0eb493;
+    margin-right: 16px;
+  }
+  &-title { 
+    color: $global-color;
+    font-weight: $font-weight-semibold;
+    font-size: $global-large-font-size;
+  }
+  &-description {
+    color: rgba($color: $global-color, $alpha: .7);
+    font-size: $global-small-font-size;
+    line-height: 21px;
+    word-break: normal;
+  }
+}

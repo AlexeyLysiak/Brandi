@@ -1,0 +1,23 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper { 
+  margin-bottom: 80px;
+  // display: flex;
+}
+.swiper-slide {
+  display: flex;  
+  justify-content: center;
+}
+
+.swiper-pagination-bullet  { 
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba($color: #062033, $alpha: .9);
+  background-color: transparent;
+}
+.swiper-pagination-bullet-active {
+  background-color: #062033;
+  border-color: #062033;
+} 

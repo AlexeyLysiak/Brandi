@@ -581,6 +581,36 @@ template {
   }
 }
 
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  margin-bottom: 80px;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border: 1px solid rgba(6, 32, 51, 0.9);
+  background-color: transparent;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #062033;
+  border-color: #062033;
+}
+
 .columns-zero {
   margin: 0;
 }
@@ -721,6 +751,7 @@ h6 {
 
 .section-hero {
   color: #fff;
+  padding: 0 !important;
 }
 
 .section-hero .section-body {
@@ -962,6 +993,7 @@ ol, ul {
 
 .section {
   position: relative;
+  padding: 50px 0;
 }
 
 .section-background {
@@ -1001,6 +1033,7 @@ ol, ul {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.56px;
+  text-align: center;
 }
 
 .section-description {
@@ -1008,5 +1041,77 @@ ol, ul {
   margin: 0 auto;
   color: rgba(6, 32, 51, 0.8);
   font-weight: 600;
+}
+
+.section-features {
+  background-color: #f4f7f9;
+  padding: 75px 0 50px;
+}
+
+.section-features .section-header {
+  margin-bottom: 65px;
+}
+
+.heart-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heart-block .heart-line {
+  width: 90px;
+  height: 1px;
+  background-color: rgba(6, 32, 51, 0.1);
+}
+
+.heart-block .heart {
+  font-size: 18px;
+  margin: 0 14px;
+  color: rgba(6, 32, 51, 0.2);
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.card .icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #0eb493;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: #0eb493;
+  margin-right: 16px;
+}
+
+.card-title {
+  color: #062033;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card-description {
+  color: rgba(6, 32, 51, 0.7);
+  font-size: 13px;
+  line-height: 21px;
+  word-break: normal;
 }
 /*# sourceMappingURL=main.css.map */

@@ -11,6 +11,7 @@ $hero-secondary-color: rgba($color: #fff, $alpha: .9);
 
 .section-hero { 
   color: $hero-primary-color;
+  padding: 0 !important;
   .section-body {
     text-align: center;
     padding: 55px 0;
