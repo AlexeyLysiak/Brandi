@@ -4,7 +4,7 @@ $padding-section-mobile: $padding-section / 2;
 
 .section {
   position: relative;
-  padding: $padding-section-mobile 0;
+  padding-top: $padding-section-mobile;
   &-background {
     position: absolute;
     z-index: -1;
@@ -35,22 +35,25 @@ $padding-section-mobile: $padding-section / 2;
     text-transform: uppercase;
     letter-spacing: -0.56px;
     text-align: center;
+    margin-bottom: 25px;
   }
   &-subtitle { 
 
   }
   &-description { 
+    padding-top: 35px;
     max-width: 930px;
     margin: 0 auto;
+    text-align: center;
     color: $global-alpha-color;
     font-weight: $font-weight-semibold;
   }
   
   &-features { 
     background-color: #f4f7f9;
-    padding: 75px 0 50px;
+    padding: 35px 0 25px;
     .section-header {
-      margin-bottom: 65px;
+      margin-bottom: 35px;
     }
   }
 }
@@ -75,7 +78,18 @@ $padding-section-mobile: $padding-section / 2;
   
 }
 @media screen and (min-width: $breakpoint-small) {
-  
+  .section {
+    padding-top: $padding-section;
+    &-title {
+      
+    }
+    &-features { 
+      padding: 75px 0 50px;
+      .section-header {
+        margin-bottom: 65px;
+      }
+    }
+  }
 }
 @media screen and (min-width: $breakpoint-medium) {
   

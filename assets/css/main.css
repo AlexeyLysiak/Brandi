@@ -590,25 +590,21 @@ template {
   margin-bottom: 80px;
 }
 
-.swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   border: 1px solid rgba(6, 32, 51, 0.9);
   background-color: transparent;
+  margin: 0 8px;
 }
 
 .swiper-pagination-bullet-active {
   background-color: #062033;
   border-color: #062033;
+}
+
+.swiper-pagination-bullets {
+  margin: 0 8px;
 }
 
 .columns-zero {
@@ -993,7 +989,7 @@ ol, ul {
 
 .section {
   position: relative;
-  padding: 50px 0;
+  padding-top: 50px;
 }
 
 .section-background {
@@ -1034,22 +1030,25 @@ ol, ul {
   text-transform: uppercase;
   letter-spacing: -0.56px;
   text-align: center;
+  margin-bottom: 25px;
 }
 
 .section-description {
+  padding-top: 35px;
   max-width: 930px;
   margin: 0 auto;
+  text-align: center;
   color: rgba(6, 32, 51, 0.8);
   font-weight: 600;
 }
 
 .section-features {
   background-color: #f4f7f9;
-  padding: 75px 0 50px;
+  padding: 35px 0 25px;
 }
 
 .section-features .section-header {
-  margin-bottom: 65px;
+  margin-bottom: 35px;
 }
 
 .heart-block {
@@ -1076,12 +1075,22 @@ ol, ul {
   color: rgba(6, 32, 51, 0.2);
 }
 
+@media screen and (min-width: 640px) {
+  .section {
+    padding-top: 100px;
+  }
+  .section-features {
+    padding: 75px 0 50px;
+  }
+  .section-features .section-header {
+    margin-bottom: 65px;
+  }
+}
+
 .card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 370px;
-  margin: 0 auto;
 }
 
 .card .icon {
