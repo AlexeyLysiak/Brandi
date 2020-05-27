@@ -30,7 +30,7 @@ $padding-section-mobile: $padding-section / 2;
   }
   &-title{ 
     color: $section-heading-color;
-    font-size: $global-xlarge-font-size;
+    font-size: 22px;
     font-weight: $font-weight-extrabold;
     text-transform: uppercase;
     letter-spacing: -0.56px;
@@ -41,12 +41,12 @@ $padding-section-mobile: $padding-section / 2;
 
   }
   &-description { 
-    padding-top: 35px;
     max-width: 930px;
     margin: 0 auto;
     text-align: center;
     color: $global-alpha-color;
     font-weight: $font-weight-semibold;
+    margin-bottom: 48px;
   }
   
   &-features { 
@@ -56,12 +56,38 @@ $padding-section-mobile: $padding-section / 2;
       margin-bottom: 35px;
     }
   }
+
+  &-works {
+    .tabs{
+      &-nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 35px;
+      }
+      &-link { 
+        color: $global-color;
+        font-size: $global-medium-font-size;
+        font-weight: $font-weight-bold;
+        border-radius: 5px;
+        margin: 0 5px;
+        padding: 5px 10px;
+        &:hover {
+          color: $global-inverse-color;
+          background-color: $section-heading-color;
+        }
+      }
+    }
+  }
+  
 }
 
 .heart-block { 
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 35px;
   .heart-line {
     width: 90px;
     height: 1px;
@@ -75,13 +101,17 @@ $padding-section-mobile: $padding-section / 2;
 }
 
 @media screen and (min-width: $breakpoint-xsmall) {
-  
+  .section {
+    &-title {
+      font-size: $global-xlarge-font-size;
+    }
+  }
 }
 @media screen and (min-width: $breakpoint-small) {
   .section {
     padding-top: $padding-section;
     &-title {
-      
+      font-size: $global-xlarge-font-size;
     }
     &-features { 
       padding: 75px 0 50px;
@@ -89,8 +119,24 @@ $padding-section-mobile: $padding-section / 2;
         margin-bottom: 65px;
       }
     }
+
+    &-works {
+      .tabs{
+        &-nav{
+          flex-direction: row;
+          margin-bottom: 35px;
+        }
+      }
+    }
   }
 }
 @media screen and (min-width: $breakpoint-medium) {
-  
+  &-works {
+    .tabs{
+      &-link { 
+        margin: 0 10px;
+        padding: 10px 20px;
+      }
+    }
+  }
 }
