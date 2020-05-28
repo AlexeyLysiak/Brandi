@@ -1396,7 +1396,6 @@ ol, ul {
 }
 
 .section-facts .card-media {
-  padding-top: 15px;
   border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   width: 70px;
@@ -1412,7 +1411,7 @@ ol, ul {
           justify-content: center;
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  margin: 0 15px 0 0;
+  margin: 10px 15px 0 0;
 }
 
 .section-facts .card-media img {
