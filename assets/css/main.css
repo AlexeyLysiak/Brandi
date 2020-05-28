@@ -1396,6 +1396,7 @@ ol, ul {
 }
 
 .section-facts .card-media {
+  padding-top: 15px;
   border: 2px solid rgba(255, 255, 255, 0.4);
   border-radius: 50%;
   width: 70px;
