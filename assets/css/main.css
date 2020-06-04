@@ -1128,6 +1128,30 @@ ol, ul {
   color: #fff;
 }
 
+.section-contacts .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-contacts .contacts-title {
+  color: #062033;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.section-contacts .contacts-link {
+  font-size: 13px;
+  max-width: 170px;
+  line-height: 24px;
+  color: #6a737b;
+}
+
 .heart-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1234,6 +1258,15 @@ ol, ul {
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
+}
+
+.section-works .card-image {
+  margin-bottom: 0;
+}
+
+.section-works .card-image image {
+  width: 100%;
+  height: auto;
 }
 
 .section-works .card-overlay {
