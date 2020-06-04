@@ -1264,11 +1264,6 @@ ol, ul {
   margin: 0;
 }
 
-.section-works .card-image image {
-  width: 100%;
-  height: auto;
-}
-
 .section-works .card-overlay {
   display: none;
   position: absolute;
