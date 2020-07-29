@@ -1084,16 +1084,19 @@ ol, ul {
   margin-bottom: 35px;
 }
 
-.section-works .tabs-link {
+.section-works .tabs-btn {
+  background-color: transparent;
   color: #062033;
   font-size: 14px;
   font-weight: 700;
+  border: none;
   border-radius: 5px;
   margin: 0 5px;
   padding: 5px 10px;
 }
 
-.section-works .tabs-link:hover {
+.section-works .tabs-btn:hover {
+  cursor: pointer;
   color: #fff;
   background-color: #0eb493;
 }

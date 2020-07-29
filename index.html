@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>Brandi</title>
 </head>
@@ -167,18 +167,18 @@
       <div class="section-body">
         <div class="tabs">
           <div class="container">
-            <ul class="tabs-nav ">
-              <li class="tabs-item"><a href="#pills-all" class="tabs-link">All</a></li>
-                <li class="tabs-item"><a href="#pills-branding" class="tabs-link">Branding</a></li>
-                <li class="tabs-item"><a href="#pills-web" class="tabs-link">Web</a></li>
-                <li class="tabs-item"><a href="#pills-design" class="tabs-link">Logo Design</a></li>
-                <li class="tabs-item"><a href="#pills-photo" class="tabs-link">Photography</a></li>
-            </ul>  
+            <div class="tabs-nav ">
+              <button class="tabs-btn" onclick="filterSelection('all')">All</button>
+              <button class="tabs-btn" onclick="filterSelection('branding')">Branding</button>
+              <button class="tabs-btn" onclick="filterSelection('web')">Web</button>
+              <button class="tabs-btn" onclick="filterSelection('logoDesign')">Logo Design</button>
+              <button class="tabs-btn" onclick="filterSelection('photography')">Photography</button>
+            </div>  
           </div>
           
           <div class="tabs-content">
             <div class="columns">
-              <div class="column width-1-4-lg width-1-2-sm width-1-1">
+              <div class="column photography width-1-4-lg width-1-2-sm width-1-1">
                 <div class="card">
                   <figure class="card-image">
                     <img src="assets/img/kong.jpg" alt="kong">
@@ -191,7 +191,7 @@
                 </div>
               </div>
   
-              <div class="column width-1-4-lg width-1-2-sm width-1-1">
+              <div class="column web width-1-4-lg width-1-2-sm width-1-1">
                 <div class="card">
                   <figure class="card-image">
                     <img src="assets/img/fishing.jpg" alt="fishing">
@@ -204,7 +204,7 @@
                 </div>
               </div>
   
-              <div class="column width-1-4-lg width-1-2-sm width-1-1">
+              <div class="column logoDesign width-1-4-lg width-1-2-sm width-1-1">
                 <div class="card">
                   <figure class="card-image">
                     <img src="assets/img/river.jpg" alt="river">
@@ -218,7 +218,7 @@
                 </div>
               </div>
   
-              <div class="column width-1-4-lg width-1-2-sm width-1-1">
+              <div class="column photography width-1-4-lg width-1-2-sm width-1-1">
                 <div class="card">
                   <figure class="card-image">
                     <img src="assets/img/drop.jpg" alt="drop">
@@ -231,7 +231,7 @@
                 </div>
               </div>
   
-              <div class="column width-1-4-lg width-1-2-sm width-1-1">
+              <div class="column branding width-1-4-lg width-1-2-sm width-1-1">
                 <div class="card">
                   <figure class="card-image">
                     <img src="assets/img/soldiers.jpg" alt="soldiers">
@@ -244,7 +244,7 @@
                 </div>
               </div>
   
-              <div class="column width-1-4-lg width-1-2-sm width-1-1">
+              <div class="column web width-1-4-lg width-1-2-sm width-1-1">
                 <div class="card">
                   <figure class="card-image">
                     <img src="assets/img/kopaz.jpg" alt="kopaz">
@@ -257,7 +257,7 @@
                 </div>
               </div>
   
-              <div class="column width-1-4-lg width-1-2-sm width-1-1">
+              <div class="column logoDesign width-1-4-lg width-1-2-sm width-1-1">
                 <div class="card">
                   <figure class="card-image">
                     <img src="assets/img/abstract.jpg" alt="abstract">
@@ -270,7 +270,7 @@
                 </div>
               </div>
   
-              <div class="column width-1-4-lg width-1-2-sm width-1-1">
+              <div class="column branding width-1-4-lg width-1-2-sm width-1-1">
                 <div class="card">
                   <figure class="card-image">
                     <img src="assets/img/shop.jpg" alt="shop">
@@ -532,7 +532,8 @@
 
 
   
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/swiper.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>

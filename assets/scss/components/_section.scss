@@ -73,14 +73,17 @@ $padding-section-mobile: $padding-section / 2;
         align-items: center;
         margin-bottom: 35px;
       }
-      &-link { 
+      &-btn { 
+        background-color: transparent;
         color: $global-color;
         font-size: $global-medium-font-size;
         font-weight: $font-weight-bold;
+        border: none;
         border-radius: 5px;
         margin: 0 5px;
         padding: 5px 10px;
         &:hover {
+          cursor: pointer;
           color: $global-inverse-color;
           background-color: $section-heading-color;
         }
